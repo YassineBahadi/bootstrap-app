@@ -37,3 +37,91 @@
   transform: translate3d(0px, -5px, 0px);
 	color: #316ce8;
 }
+
+/* Style général pour la section de contact */
+.contact-section {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 100px 0;
+}
+
+/* Style pour les informations de contact */
+.contact-info {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.icon-wrapper {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-wrapper i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.icon-wrapper:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.info-text h4 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.info-text p {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Style pour la carte Google Maps */
+.map-container {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 500px; /* Hauteur fixe pour correspondre à la hauteur de la carte */
+}
+
+.map-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Alignement du texte avec le haut de la carte */
+.row.align-items-start {
+    align-items: flex-start !important;
+}
+
+/* Animations */
+.animate__animated {
+    --animate-duration: 1s;
+}
