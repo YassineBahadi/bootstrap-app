@@ -1,127 +1,252 @@
-@import url(//fonts.googleapis.com/css?family=Montserrat:300,500);
-.team4 {
-  font-family: "Montserrat", sans-serif;
-	color: #8d97ad;
-  font-weight: 300;
-}
-
-.team4 h1, .team4 h2, .team4 h3, .team4 h4, .team4 h5, .team4 h6 {
-  color: #3e4555;
-}
-
-.team4 .font-weight-medium {
-	font-weight: 500;
-}
-
-.team4 h5 {
-    line-height: 22px;
-    font-size: 18px;
-}
-
-.team4 .subtitle {
-    color: #8d97ad;
-    line-height: 24px;
-		font-size: 13px;
-}
-
-.team4 ul li a {
-  color: #8d97ad;
-  padding-right: 15px;
-  -webkit-transition: 0.1s ease-in;
-  -o-transition: 0.1s ease-in;
-  transition: 0.1s ease-in;
-}
-
-.team4 ul li a:hover {
-  -webkit-transform: translate3d(0px, -5px, 0px);
-  transform: translate3d(0px, -5px, 0px);
-	color: #316ce8;
-}
-
-/* Style général pour la section de contact */
-.contact-section {
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    padding: 100px 0;
-}
-
-/* Style pour les informations de contact */
-.contact-info {
-    background: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.contact-info h2 {
-    font-weight: 700;
+/* Typographie moderne */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
     color: #333;
-    margin-bottom: 20px;
+    background-color: #f9f9f9;
 }
 
-.contact-info p {
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* Navbar stylisée */
+.navbar {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff !important;
+}
+
+.navbar-brand i {
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffdd57 !important;
+}
+
+/* Carousel avec effet de superposition */
+.carousel-item {
+    height: 100vh;
+    min-height: 400px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.carousel-caption p {
     font-size: 1.2rem;
+    color: #fff;
+}
+
+/* Section Services */
+#services .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#services .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#services .card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+#services .card-body {
+    padding: 20px;
+}
+
+#services .card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+#services .card-text {
+    font-size: 1rem;
     color: #666;
 }
 
-.info-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
+#services .btn-primary {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background 0.3s ease;
 }
 
-.icon-wrapper {
-    background: linear-gradient(135deg, #007bff, #0056b3);
-    padding: 15px;
+#services .btn-primary:hover {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+}
+
+/* Section Équipe */
+.team4 {
+    background: #fff;
+    padding: 80px 0;
+}
+
+.team4 h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+.team4 .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team4 .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.team4 .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.team4 .card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.team4 .card-subtitle {
+    font-size: 1rem;
+    color: #666;
+}
+
+.team4 .card-text {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.team4 .list-inline-item a {
+    color: #6a11cb;
+    transition: color 0.3s ease;
+}
+
+.team4 .list-inline-item a:hover {
+    color: #2575fc;
+}
+
+/* Section Contact */
+.contact-section {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    padding: 80px 0;
+    color: #fff;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.contact-section .info-item {
+    margin-bottom: 30px;
+}
+
+.contact-section .icon-wrapper {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.icon-wrapper i {
-    color: white;
+.contact-section .icon-wrapper i {
     font-size: 1.5rem;
 }
 
-.icon-wrapper:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.info-text h4 {
-    font-size: 1.3rem;
-    color: #333;
+.contact-section .info-text h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
     margin-bottom: 5px;
 }
 
-.info-text p {
-    font-size: 1.1rem;
-    color: #666;
-    margin: 0;
+.contact-section .info-text p {
+    font-size: 1rem;
+    color: #ddd;
 }
 
-/* Style pour la carte Google Maps */
-.map-container {
-    border-radius: 20px;
+.contact-section .map-container {
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 500px; /* Hauteur fixe pour correspondre à la hauteur de la carte */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.map-container:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
 }
 
-/* Alignement du texte avec le haut de la carte */
-.row.align-items-start {
-    align-items: flex-start !important;
+footer p {
+    margin: 0;
+    font-size: 1rem;
 }
 
 /* Animations */
 .animate__animated {
-    --animate-duration: 1s;
+    animation-duration: 1s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .team4 .card {
+        margin-bottom: 20px;
+    }
+
+    .contact-section .info-item {
+        margin-bottom: 20px;
+    }
 }
